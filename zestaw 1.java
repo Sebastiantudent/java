@@ -1,5 +1,3 @@
-package javaTpoint.MicrosoftJava; 
-package java.time
 /*
 class zad1 {
     public static void main(String[] args) {
@@ -9,14 +7,12 @@ class zad1 {
 */
 /*
 class zad2 {
+    
+    public static void main(String[] args) {
     String imie = "sebastian";
-    
     String nazwisko = "Sliski";
-    
-    public static void zad2_1(String[] args) {
-        zad2 im = new zad2();
-    System.out.println(im.imie.length());
-    System.out.println(im.nazwisko.length());
+    System.out.println(imie.length());
+    System.out.println(nazwisko.length());
     }
 }
 */
@@ -67,23 +63,29 @@ class zad4_2 {
 */
 /*
 class zad5{
-    String A = "Ala ma kota";
      public static void main(String[] args) {
-         
+         String A = "Ala ma kota";
+         String B = A.replace('A','e');
+         System.out.println(B.replace('a','e'));
      }
 }
 */
 /*
-class zad6{
-    String A = "Ala ma kota";
-    
-     public static void main(String[] args) {
-         zad6 duze = new zad6();
-         String H = "";
-         duze.A = H;
-         System.out.println(H.toUpperCase());
-     }
+class zad6 {
+    public static void main (String[] args) {
+      
+        String str= "Ala ma kota", nstr="";
+        char ch;
+      for (int i=0; i<str.length(); i++)
+      {
+        ch= str.charAt(i); 
+        nstr= ch+nstr; 
+      }
+      System.out.println(nstr.toUpperCase());
+    }
 }
+*/
+/*
 zad 7
 A = 65 !=33 @=64 >=62 ~=126 \n=10 
 zad 8 
