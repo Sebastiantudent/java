@@ -119,14 +119,18 @@ public class zestaw3 {
     }
     static void SumaParzystych(int n){
         int suma=0;
-        for (int i = 1; i <= n; i+=2) {
-            suma=suma+i;
+        int j=0;
+        for (int i = 1; i <= n; i++) {
+            suma=suma+j;
+            j+=2;
         }
     }
     static void SumaNieParzystych(int n){
         int suma=0;
-        for (int i = 1; i <= n; i+=2) {
-            suma=suma+i;
+        int j=1;
+        for (int i = 1; i <= n; i++) {
+            suma=suma+j;
+            j+=2;
         }
     }
 }
