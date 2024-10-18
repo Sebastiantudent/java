@@ -35,6 +35,7 @@ class zad3 {
     }
 }
 */
+/*
 class zad4 {
     public static void main(String[] args) {
     Scanner liczba1 = new Scanner(System.in);
@@ -49,6 +50,7 @@ class zad4 {
         System.out.println(a / b);
     }
 }
+*/
 class zad5 {
     public static void main(String[] args) {
  Scanner reader = new Scanner(System.in);
