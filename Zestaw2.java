@@ -49,3 +49,22 @@ class zad4 {
         System.out.println(a / b);
     }
 }
+class zad5 {
+    public static void main(String[] args) {
+ Scanner reader = new Scanner(System.in);
+        System.out.println("wpisz 1 liczbe: ");
+        int liczba = reader.nextInt();
+        System.out.println(liczba+140);
+        System.out.println(liczba-31);
+        System.out.println(liczba*7);
+        System.out.println((float)liczba/13);
+        System.out.println(liczba%7);
+        System.out.println((liczba/4));
+        System.out.println((float)(Math.pow(liczba,45)));
+        System.out.println(liczba&59);
+        System.out.println(liczba^23);
+        System.out.println(liczba<<5);
+        System.out.println(liczba>>6);
+        reader.close();
+      }
+}
