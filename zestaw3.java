@@ -133,6 +133,53 @@ public class zestaw3 {
             j+=2;
         }
     }
+    static void SumaKwaNaturalnych(int n){
+        double suma=0;
+        for (double i = 1; i <= n; i++) {
+            
+            suma=suma+Math.pow(i,2);
+        }
+        System.out.println(suma);
+    }
+     static void SumaSzeNaturalnych(int n){
+        double suma=0;
+        for (double i = 1; i <= n; i++) {
+            
+            suma=suma+Math.pow(i,3);
+        }
+        System.out.println(suma);
+    }
+     static void SumaOdwNaturalnych(int n){
+        float suma=0;
+        for (float i = 1; i <= n; i++) {
+            
+            suma=suma+(1/i);
+        }
+        System.out.println(suma);
+    }
+    static boolean czyDoskonala(int n) {
+            if (n < 1) {
+                return false;
+            }
+            int sumDziel = 0;
+            for (int i = 1; i <= n / 2; i++) {
+                if (n % i == 0) {
+                    sumDziel += i;
+                }
+            }
+            return sumDziel == n;
+        }
+    static boolean czyPierwsza(int n) {
+            if (n <= 1) {
+                return false;
+            }
+            for (int i = 2; i * i <= n; i++) {
+                if (n % i == 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
 }
 /*
 *
