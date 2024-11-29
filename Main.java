@@ -5,34 +5,28 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
 
-        Produkt myObj = new Produkt("kawa",100,39.00);
-        Produkt myObj1 = new Produkt("marmolada",10,9.00);
-        Produkt myObj2 = new Produkt("pizza mrozona",1000,19.00);
-        Produkt myObj3 = new Produkt("zupa z paczki",0,2.00);
-        myObj.wyswietlIformacje();
-        myObj.DodajDoMagazynu(20);
-        myObj.wyswietlIformacje();
-        myObj.UsunzMagazynu(10);
-        myObj.wyswietlIformacje();
-        myObj.UsunzMagazynu(1000);
-        myObj.wyswietlIformacje();
-        KoszykZakupowy myobj = new KoszykZakupowy(new ArrayList<Produkt>());
-        myobj.dodajProdukt(myObj);
-        myobj.dodajProdukt(myObj3);
-        myobj.dodajProdukt(myObj1);
-        myobj.dodajProdukt(myObj2);
-        myobj.dodajProdukt(myObj);
-        myobj.WyswietlZawartoscKoszyka();
-        myobj.obliczCalkowitaWartosc();
-        myObj.wyswietlIformacje();
-        Zamowienie zamowienie = new Zamowienie(myobj,"Oczekiwanie na Platnosc");
-        zamowienie.UstawStatusZamowienia("gotowe do wysylki");
-        zamowienie.WyswietlZamowienie();
-        Zamowienie zamowienie1 = new Zamowienie(myobj,"Oczekiwanie na Platnosc");
-        Klient klient = new Klient("Robert","Maklowicz",new ArrayList<Zamowienie>());
-        klient.Dodajzamowienie(zamowienie);
-        klient.Dodajzamowienie(zamowienie1);
-        klient.WyswietlHistorieZamowien();
+        Produkt myObj = new Produkt("kawa",50,39.00);
+        Produkt myObj1 = new Produkt("marmolada",500,9.00);
+        Produkt myObj2 = new Produkt("pizza mrozona",70,19.00);
+        Produkt myObj3 = new Produkt("zupa z paczki",1000,2.00);
+        ArrayList<Produkt> produkt = new ArrayList<>();
+        produkt.add(myObj);
+        produkt.add(myObj1);
+        produkt.add(myObj2);
+        produkt.add(myObj3);
+        ArrayList<Integer> ilosc = new ArrayList<>();
+        ilosc.add(50);
+        ilosc.add(500);
+        ilosc.add(70);
+        ilosc.add(1000);
+        Magazyn magazyn = new Magazyn(produkt, ilosc);
+        magazyn.Wyswietl();
+        Adres adres1 = new Adres("Witosa",46,"Olsztyn","10-432");
+        Adres adres2 = new Adres("Witosa",5,34,"Olsztyn","10-612");
+
+        //adres1.ToString();
+        //adres2.Pokaz();
+
 
         }
     }

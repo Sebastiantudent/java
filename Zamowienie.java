@@ -1,6 +1,6 @@
 public class Zamowienie {
-    String statusZamowienia;
-    KoszykZakupowy koszykZakupowy;
+   private String statusZamowienia;
+   private KoszykZakupowy koszykZakupowy;
     public Zamowienie(KoszykZakupowy koszykZakupowy, String statusZamowienia) {
   this.koszykZakupowy = koszykZakupowy;
   this.statusZamowienia = statusZamowienia;
@@ -12,4 +12,9 @@ public class Zamowienie {
     koszykZakupowy.WyswietlZawartoscKoszyka();
     System.out.println(statusZamowienia);
     }
+
+    public KoszykZakupowy getKoszykZakupowy() {
+        return koszykZakupowy;
+    }
+    public String getStatusZamowienia() {return statusZamowienia;}
 }
