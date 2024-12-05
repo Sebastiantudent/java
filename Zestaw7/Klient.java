@@ -11,12 +11,15 @@ public class Klient {
         this.listaZamowien = listaZamowien;
         this.adres = adres;
     }
+    @Override
+    public String toString() {
+        return "imie: "+imie+", nazwisko: "+nazwisko;
+
+    }
     public void Dodajzamowienie(Zamowienie z) {
         this.listaZamowien.add(z);
     }
-    @Override void getClass(){
-    System.out.println("Czesc jestem klasa Klient");
-    }
+
     public void WyswietlHistorieZamowien() {
 
         for(int i=0; i<listaZamowien.size(); i++) {
