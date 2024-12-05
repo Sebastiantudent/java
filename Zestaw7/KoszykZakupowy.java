@@ -25,10 +25,11 @@ public class KoszykZakupowy {
             //ilosc=0;
         }
     }
+
     public double obliczCalkowitaWartosc() {
         double cal_cena=0;
         for(int i=0; i<lista_Produktow.size(); i++) {
-           cal_cena += lista_Produktow.get(i).getCena();
+            cal_cena += lista_Produktow.get(i).getCena();
         }
         return cal_cena;
     }
