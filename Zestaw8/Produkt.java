@@ -52,6 +52,12 @@ class Produkt implements ProduktInterface {
             this.ilosc -= n;
         }
     }
+    public void setNazwa(String nazwa) {
+        if(nazwa!=null)
+            this.nazwa = nazwa;
+        else
+            throw new IllegalArgumentException("nazwa cannot be null");
+    }
     public String getNazwa() {return nazwa;}
     public int getIlosc() {return ilosc;}
     public double getCena() {return cena;}
