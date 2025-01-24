@@ -39,14 +39,7 @@ public class Main {
     public static <T> T findMax2(Pair<? extends Animal> pair1) {
         
     }
-    public static  <T> T[] swap(T[] array, int index1, int index2) {
-        if(array.length < index2 || array.length < index1) {
-            T temp = array[index1];
-            array[index1] = array[index2];
-            array[index2] = temp;
-
-            return array;
-        }
+    
         else throw new AssertionError("Index wyszedl poza dlugosc tablicy");
     }
     public static void main(String[] args) {
