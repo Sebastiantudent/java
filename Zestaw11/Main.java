@@ -40,8 +40,6 @@ public class Main {
         
     }
     
-        else throw new AssertionError("Index wyszedl poza dlugosc tablicy");
-    }
     public static void main(String[] args) {
 
        Box<String> box1 = new Box<>();
