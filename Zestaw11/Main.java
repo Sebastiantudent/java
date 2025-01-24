@@ -9,6 +9,30 @@ public class Main {
     public static <T> boolean isEqual(T box1, T box2) {
         return box1.equals(box2);
     }
+    public static <T extends Comparable<T>> T minValue(T[] array) {
+        if (array == null || array.length == 0) {
+            throw new IllegalArgumentException("Tablica nie może być pusta");
+        }
+
+        T min = array[0];
+        for (T element : array) {
+            if (element.compareTo(min) < 0) {
+                min = element;
+            }
+        }
+        return min;
+    }
+     public static <T> void swap(T[] tab,int first,int second){
+
+        if(tab.length>first && tab.length>second && first>=0 && second>=0){
+            var count = tab[first];
+            tab[first]=tab[second];
+            tab[second]=count;
+        }
+        else {
+            throw new IndexOutOfBoundsException("Out of Index");
+        }
+    }
     public static <T extends Animal> T findMax(T elem1, T elem2) {
         return elem1.compareTo(elem2) > 0 ? elem1 : elem2;
     }
